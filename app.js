@@ -4,6 +4,7 @@ const electron = require('electron');
 const remote = electron.remote;
 const dialog = remote.dialog;
 const fs = require('fs');
+const shell = electron.shell;
 
 let width = 320; // We will scale the photo width to this
 let height = 0;  // This will be computed based on the input stream
@@ -137,7 +138,7 @@ function handleError(error) {
 function clearphoto() {
   const downloadbutton = document.getElementById('downloadbutton');
   let context = canvas.getContext('2d');
-  context.fillStyle = "#AAA";
+  context.fillStyle = "#EEE";
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   downloadbutton.style.visibility = 'hidden';
@@ -238,6 +239,11 @@ function startApp() {
 
   clearphoto();
   downloadbutton.onclick = savePhotoAsFile;
+
+  $(document).on('click', 'a[href^="http"]', function(event) {
+    event.preventDefault();
+    shell.openExternal(this.href);
+  });
 
   start();
 }

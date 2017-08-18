@@ -3,6 +3,8 @@
 **How to use mediadevices in WebRTC style in Electron framework.**
 
 This is a simple Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+This demo demonstrates how developer can programmatically switches video stream from one device (embbeded webcam, for example) to another
+device (for example, USB webcam). 
 
 **Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
 
@@ -33,4 +35,12 @@ npm install
 npm start
 ```
 
+## To Build executable
+To build executable application should use [electron-packager, Git](https://github.com/electron-userland/electron-packager)
+See [electron-packager tutorial](https://www.christianengvall.se/electron-packager-tutorial/)
+
+# build under WIndows example:
+electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=IgorZamiatin --version-string.FileDescription=IgorZamiatin --version-string.ProductName="electron-media-manager"
+
 [CC0 1.0 (Public Domain)](LICENSE.md)
+
