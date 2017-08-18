@@ -1,0 +1,16 @@
+{
+  "name": "electron-media-manager",
+  "version": "1.0.0",
+  "description": "Example webcamera and audio devices with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Igor Zamiatin",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2",
+    "electron-prebuilt": "^1.6.11"
+  }
+}

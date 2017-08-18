@@ -1,0 +1,5 @@
+{
+  "name": "electron-media-manager",
+  "docsUrl": "https://github.com/webrtc/samples/tree/gh-pages/src/content/devices/input-output",
+  "description": "You can use WebRTC getUserMedia() API, a <video> element, and a <canvas> to capture photos using your webcams"
+}
