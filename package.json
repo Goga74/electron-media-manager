@@ -13,9 +13,14 @@
     "type": "git",
     "url": "https://github.com/Goga74/electron-media-manager"
   },
+  "dependencies": {
+    "electron": "^1.7.6",
+    "electron-packager": "^8.7.2",
+    "electron-prebuilt": "^1.4.13"
+  }, 
   "devDependencies": {
     "electron": "^1.7.6",
     "electron-packager": "^8.7.2",
-    "electron-prebuilt": "^1.7.6"
+    "electron-prebuilt": "^1.4.13"
   }
 }
